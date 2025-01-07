@@ -7,8 +7,10 @@ const profile = () => {
 	return (
 		<SafeAreaView className="bg-PRIMARY">
 			<Header name={"none"} title={"Profile"} />
-			<View className="w-full flex justify-center items-center h-20  mt-10">
-				<View className="w-[85%] flex-row gap-4 justify-center items-center border-2 border-TERTIARY p-2 rounded-md opacity-80">
+
+			<View className="w-full flex justify-center items-center h-20  mt-24">
+
+				<View className="w-[85%] flex-row gap-4 justify-center items-center border-2 border-TERTIARY p-2 rounded-lg opacity-80">
 					<View className="w-12 h-12 bg-black rounded-full"></View>
 					<View>
 						<Text
@@ -29,7 +31,7 @@ const profile = () => {
 
 			<View className="w-full h-full flex justify-start items-center">
 
-				<View className="w-[90%] flex justify-start items-start mt-10 h-full gap-5 pt-32">
+				<View className="w-[90%] flex justify-start items-start mt-10 h-full gap-5 pt-24">
 
 					<View className="flex-row gap-2 w-full  items-center border-2 border-black pl-3 pr-3 rounded-xl bg-SECONDARY">
 						<Text
@@ -77,7 +79,7 @@ const profile = () => {
 							console.log("Helllo");
 						}}
 					>
-						<Text className="text-white font-semibold text-xl ">Login</Text>
+						<Text className="text-white font-semibold text-xl ">Save</Text>
 					</TouchableOpacity>
 					</View>
 				</View>

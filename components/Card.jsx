@@ -1,8 +1,16 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
+import * as Clipboard from 'expo-clipboard';
 
 const Card = ({card,index}) => {
+  
+  const copyToClipboard = async () => {
+    let password = card.password;
+    console.log("helllll",password);
+    await Clipboard.setStringAsync(password);
+};
+
   return (
     <View className={`w-[97%] h-28 flex items-center rounded-t-[20px]  ${index == -1 ? 'mt-0' : 'mt-[-15]'} `} style={{backgroundColor:card.color}}>
 
@@ -18,7 +26,9 @@ const Card = ({card,index}) => {
         </View>
 
         <View className="w-[20%] ">
+          <TouchableOpacity onPress={copyToClipboard}>
         <MaterialCommunityIcons name='content-copy' size={24}  color={"#1f294d"} className="text-right pr-2"/>
+          </TouchableOpacity>
         </View>
 
       </View>

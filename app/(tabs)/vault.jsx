@@ -13,38 +13,42 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Card from "../../components/Card";
 const vault = () => {
 	const cards = [
-		{ id: 1, type: "Person", title: "John B Cooper", color: "#f8b4d9" },
+		{ id: 1, type: "Person", title: "John B Cooper", password:"123452111", color: "#f8b4d9" },
 		{
 			id: 2,
 			type: "Home",
 			title: "4470 Katella Ave, Los Alamitos",
+			password:"123452111",
 			color: "#94d2e6",
 		},
-		{ id: 3, type: "Visa", title: "**** 0798", color: "#c2f5c1" },
-		{ id: 4, type: "MasterCard", title: "**** 4621", color: "#f7d3aa" },
+		{ id: 3, type: "Visa", title: "**** 0798", password:"123452111", color: "#c2f5c1" },
+		{ id: 4, type: "MasterCard", title: "**** 4621", password:"123452111", color: "#f7d3aa" },
 		{
 			id: 5,
 			type: "American Express Gold",
 			title: "**** 4621",
+			password:"123452111",
 			color: "#f7c9f0",
 		},
-		{ id: 6, type: "Discover it", title: "**** 4621", color:"#94d2e6" },
-		{ id: 7, type: "Person", title: "John B Cooper", color: "#f8b4d9" },
+		{ id: 6, type: "Discover it", title: "**** 4621", password:"123452111", color:"#94d2e6" },
+		{ id: 7, type: "Person", title: "John B Cooper", password:"123452111", color: "#f8b4d9" },
 		{
 			id: 8,
 			type: "Home",
 			title: "4470 Katella Ave, Los Alamitos",
+			password:"123452111",
 			color: "#94d2e6",
 		},
-		{ id: 9, type: "Visa", title: "**** 0798", color: "#c2f5c1" },
-		{ id: 10, type: "MasterCard", title: "**** 4621", color: "#f7d3aa" },
+		{ id: 9, type: "Visa", title: "**** 0798", password:"123452111", color: "#c2f5c1" },
+		{ id: 10, type: "MasterCard", title: "**** 4621", password:"123452111", color: "#f7d3aa" },
 		{
 			id: 11,
 			type: "American Express Gold",
 			title: "**** 4621",
+			password:"123452111",
 			color: "#f7c9f0",
 		},
-		{ id: 12, type: "Discover it", title: "**** 4621", color: "#94d2e6" },
+		{ id: 12, type: "Discover it", title: "**** 4621", password:"123452111", color: "#94d2e6" },
 	];
   
   return (
@@ -65,7 +69,7 @@ const vault = () => {
 				keyExtractor={(item) => item.id.toString()}
 				renderItem={({ item, index }) => (
 					
-          <Card card ={item} index={index} />
+          <Card card ={item} index={index}/>
           
 				)}
 				contentContainerStyle={{ padding: 20, alignItems:"center"}}
